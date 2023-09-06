@@ -23,40 +23,22 @@ Variables:
  <li>sex: penguin sex</li>
 </ul>
 
-# Sample Code
+# Video Walkthrough
 
-### Sample 1
+Here's a walkthrough of model deployed on a simple flask website:
+
+<img src='https://github.com/gabrielaliera/Penguin-Predictor/blob/main/walkthrough.gif' title='Video Demo' width='1200' heigth="1200" alt='Video Demo' />
+GIF created with <a href="https://www.cockos.com/licecap/">LICEcap.</a> 
+
+
+# Data Visualizations
 <p align="center">
-  <img align="center" src="">
+  <img align="center" src="https://github.com/gabrielaliera/Penguin-Predictor/blob/main/README/data.PNG">
 </p>
 
-### Sample 2
+# Train and Model Selection
 <p align="center">
-  <img align="center" src="">
-</p>
-
-
-# Sample Data Visualizations
-
-### Sample 1
-<p align="center">
-  <img align="center" src="">
-</p>
-<p align="center">
-  <img align="center" src="">
-</p>
-
-### Sample 2
-<p align="center">
-  <img align="center" src="">
-</p>
-
-# Sample Statistical Test
-<p align="center">
-  <img align="center" src="">
-</p>
-<p align="center">
-  <img align="center" src="">
+  <img align="center" src="https://github.com/gabrielaliera/Penguin-Predictor/blob/main/README/training.gif">
 </p>
 
 
@@ -73,6 +55,45 @@ Variables:
   <li><a href="https://www.statsmodels.org/stable/index.html">Statsmodel</a></li>
   
 </ul>
+
+## Installation
+
+Make sure you have python3 and pip installed
+
+Create and activate virtual environment using virtualenv
+```bash
+$ python -m venv venv
+$ source venv/bin/activate
+```
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install all dependencies!
+
+```bash
+pip install flask
+pip install numpy
+pip install -U scikit-learn
+```
+
+## Usage
+
+Create a .env file using the example.env template (make a copy using the variables inside of the template)
+
+Start flask development server
+```bash
+$ export FLASK_ENV=development
+$ flask run
+```
+
+You should get a response like this in the terminal:
+```
+❯ flask run
+ * Environment: development
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+```
+
+You'll now be able to access the website at `localhost:5000` or `127.0.0.1:5000` in the browser! 
+
 
 # Contributors
   <ul>
